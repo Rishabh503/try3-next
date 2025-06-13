@@ -5,7 +5,7 @@ type ConnectionObject={
 }
 
 const connection: ConnectionObject={}
- const DBNAME="/AUTH-NEXT-CHAI-2"
+const DBNAME="/AUTH-NEXT-CHAI-2"
 export async function dbConnect():Promise<void>{
         const name=process.env.MONGO_DB_URI+DBNAME
     if(connection.isConnected){
